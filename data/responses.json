@@ -1,0 +1,189 @@
+{
+  "greeting": [
+    "Hi there! I'm doing well, thank you for asking. How can I help you today?",
+    "Hello! I'm just a virtual assistant, but I'm always ready to help. How are you?",
+    "Hey! I'm here to assist you. How can I make your day easier?",
+    "I'm great, thanks for asking! What can I do for you today?",
+    "I'm always happy to chat! How can I assist you?",
+    "I'm just a bot, but I'm here to help you with anything you need. How can I assist?",
+    "I'm just a bunch of code, but I'm feeling helpful today! 😊 How can I help?",
+    "I'm always online and ready to help. How can I assist you?"
+  ],
+  "goodbye": [
+    "Goodbye! Have a wonderful day! 👋",
+    "Thank you for chatting with us. Take care!",
+    "See you later! Feel free to return if you need more help.",
+    "Have a great day! Don't hesitate to reach out if you need assistance.",
+    "Farewell! It was a pleasure helping you today."
+  ],
+  "thanks": [
+    "You're welcome! 😊 Is there anything else I can help you with?",
+    "My pleasure! Let me know if you need any further assistance.",
+    "Happy to help! What else can I do for you?",
+    "You're very welcome! Feel free to ask if you have more questions.",
+    "Glad I could help! Is there anything else you'd like to know?"
+  ],
+  "help": [
+    "I'm here to help! I can assist you with:\n• Product information and pricing\n• Account management\n• Technical support\n• Creating support tickets\n\nWhat would you like to know?",
+    "I can help you with various topics including product information, account issues, technical support, and more. What specific area do you need assistance with?",
+    "I'm your virtual assistant! I can answer questions, provide information, and help you create support tickets. What can I help you with today?",
+    "I'm here to support you! I can help with:\n• Understanding our products and services\n• Account and billing questions\n• Technical issues and troubleshooting\n• Creating support tickets for complex issues\n\nWhat would you like to know about?"
+  ],
+  "fallback": [
+    "I'm not sure I understand. Could you please rephrase that or ask me something else?",
+    "I didn't quite catch that. Can you try asking in a different way?",
+    "I'm still learning and that's a bit unclear to me. Could you try asking something else?",
+    "I'm not sure how to respond to that. Can you ask me about our products, services, or if you need help with something specific?",
+    "I want to make sure I help you correctly. Could you rephrase your question or ask about something else?"
+  ],
+  "escalation": [
+    "I understand this is important and I want to make sure you get the best help possible. Let me connect you with one of our support specialists who can give you their full attention.",
+    "This is exactly the kind of situation where our human support team excels. I'll introduce you to someone who can really dive deep into your specific needs.",
+    "You know what? I think you'd get much better help from one of our support experts. They're really good at handling these types of situations. Let me connect you.",
+    "I want to make sure you get the personalized attention you deserve. Let me hand you over to our support team - they're great at this stuff.",
+    "This is a bit beyond my capabilities, but I know just the person who can help you. Let me connect you with our support specialist.",
+    "I can see this needs some real expertise. Let me get you connected with our support team - they're really good at solving these kinds of issues.",
+    "You deserve to talk to someone who can really focus on your specific situation. Let me connect you with our support specialist right away.",
+    "I think you'll get much better results talking to our human support team. They're really good at these complex situations. Let me connect you now."
+  ],
+  "support_ticket": [
+    "I can help you create a support ticket. What's the issue you're experiencing?",
+    "I'll help you create a support ticket. Please describe the problem you're facing.",
+    "Let me create a support ticket for you. What specific issue do you need help with?",
+    "I can assist you with creating a support ticket. What's the nature of your problem?",
+    "I'll help you submit a support ticket. Can you provide details about the issue?"
+  ],
+  "product_info": [
+    "I'd be happy to provide product information. What specific details are you looking for?",
+    "I can help you learn about our products. What would you like to know?",
+    "Let me tell you about our products. What specific information do you need?",
+    "I'm here to help with product information. What would you like to know about our offerings?",
+    "I can provide detailed product information. What specific aspects are you interested in?"
+  ],
+  "pricing": [
+    "I can help you with pricing information. What product or service are you interested in?",
+    "I'd be happy to discuss our pricing options. What are you looking for?",
+    "Let me help you understand our pricing. What specific plan or service interests you?",
+    "I can provide pricing details. What would you like to know about our costs?",
+    "I'm here to help with pricing questions. What specific product or plan are you considering?"
+  ],
+  "account_help": [
+    "I can help you with account-related issues. What specific problem are you experiencing?",
+    "Let me assist you with your account. What do you need help with?",
+    "I'm here to help with account management. What's the issue you're facing?",
+    "I can help you resolve account problems. What specific assistance do you need?",
+    "Let me help you with your account. What would you like to know or fix?"
+  ],
+  "technical_support": [
+    "I can help you with technical issues. What problem are you experiencing?",
+    "Let me assist you with technical support. What's the issue you're facing?",
+    "I'm here to help with technical problems. What do you need assistance with?",
+    "I can help you troubleshoot technical issues. What's happening?",
+    "Let me help you with technical support. What specific problem are you encountering?"
+  ],
+  "billing_help": [
+    "I can help you with billing questions. What specific issue are you experiencing?",
+    "Let me assist you with billing matters. What do you need help with?",
+    "I'm here to help with billing issues. What's the problem you're facing?",
+    "I can help you resolve billing questions. What specific assistance do you need?",
+    "Let me help you with billing. What would you like to know or resolve?"
+  ],
+  "confirmation": [
+    "Perfect! I've got that information. Is there anything else you need help with?",
+    "Great! I've noted that. What else can I assist you with?",
+    "Excellent! I understand. Is there anything else you'd like to know?",
+    "Got it! I've recorded that information. What else can I help you with?",
+    "Perfect! I've got that. Is there anything else you need assistance with?"
+  ],
+  "clarification": [
+    "Could you please provide more details so I can better assist you?",
+    "I need a bit more information to help you properly. Can you elaborate?",
+    "To give you the best help, could you provide more specific details?",
+    "I want to make sure I understand correctly. Could you clarify that?",
+    "To assist you better, could you give me more information about that?"
+  ],
+  "human_agent_intro": [
+    "Hi there! I'm Sarah from the support team. I can see you've been chatting with our AI assistant. How can I help you today?",
+    "Hello! I'm Mike, one of the support specialists. I understand you need some assistance. What can I help you with?",
+    "Hi! I'm Jennifer from customer support. I'm here to give you my full attention. What's going on?",
+    "Hey there! I'm David, your support specialist. I can see you need some help. What's the situation?",
+    "Hello! I'm Lisa from the support team. I'm here to help you get this sorted out. What can I assist you with?",
+    "Hi! I'm Alex, your dedicated support specialist. I'm ready to dive into your issue. What's happening?",
+    "Hey! I'm Chris from customer support. I can see you need some expert help. What's going on?",
+    "Hello there! I'm Emma, your support specialist. I'm here to give you my undivided attention. How can I help?"
+  ],
+  "human_agent_handoff": [
+    "Perfect! I'm connecting you with our support specialist now. They'll be with you in just a moment.",
+    "Great! I'm transferring you to our support team right now. They'll pick up right where we left off.",
+    "Excellent! I'm connecting you with our specialist. They'll be joining the conversation in a moment.",
+    "Perfect timing! I'm handing you over to our support expert now. They'll be here shortly.",
+    "Great! I'm connecting you with our support specialist. They'll be with you in just a second.",
+    "Excellent! I'm transferring you to our expert now. They'll join the conversation momentarily.",
+    "Perfect! I'm connecting you with our support team. They'll be here in just a moment.",
+    "Great! I'm handing you over to our specialist now. They'll be joining shortly."
+  ],
+  "human_agent_continuation": [
+    "I can see from the conversation that you're dealing with [issue]. Let me help you get this resolved.",
+    "I've reviewed the chat history and I understand your situation. Let's work on getting this sorted out for you.",
+    "I can see what's been happening here. Let me help you get this issue resolved properly.",
+    "I understand the situation from the conversation. Let me assist you in getting this taken care of.",
+    "I've caught up on your conversation and I can see what you're dealing with. Let me help you resolve this.",
+    "I understand the context from the chat. Let me work with you to get this issue sorted out.",
+    "I can see what's been going on here. Let me help you get this resolved as quickly as possible.",
+    "I've reviewed the conversation and I understand your needs. Let me assist you in getting this sorted."
+  ],
+  "unrelated_message": [
+    "I'm not sure I understand what you're asking. Could you please rephrase that or ask me about our products, services, account help, or technical support?",
+    "I want to make sure I help you correctly. Could you please be more specific about what you need help with? I can assist with product information, account issues, technical support, billing, or creating support tickets.",
+    "I'm here to help with customer support questions. Could you please clarify what you need assistance with? I can help with account issues, product information, technical problems, or billing questions.",
+    "I want to provide you with the best help possible. Could you please tell me more specifically what you need? I'm here to assist with our products, services, account management, or technical support."
+  ],
+  "unclear_intent": [
+    "I want to make sure I understand your request correctly. Could you please provide more details about what you need help with?",
+    "To give you the best assistance, could you please be more specific about your question or concern?",
+    "I'm here to help, but I need a bit more information to assist you properly. Could you clarify what you're looking for?",
+    "I want to make sure I address your needs correctly. Could you please provide more context about what you need help with?"
+  ],
+  "positive_feedback": [
+    "I'm glad I could help! Is there anything else you'd like to know?",
+    "Excellent! I'm happy I could assist you. What else can I help with?",
+    "Great! I'm glad that was helpful. Is there anything else you need?",
+    "Perfect! I'm pleased I could help. What else would you like to know?",
+    "Wonderful! I'm glad that worked for you. What else can I assist with?"
+  ],
+  "negative_feedback": [
+    "I apologize that I couldn't help as expected. Let me try a different approach or connect you with a human agent.",
+    "I'm sorry I wasn't able to assist you properly. Would you like me to escalate this to our support team?",
+    "I apologize for not being able to help. Let me transfer you to someone who can better assist you.",
+    "I'm sorry that wasn't helpful. Would you like me to connect you with a human agent?",
+    "I apologize for the inconvenience. Let me get you in touch with someone who can better help you."
+  ],
+  "busy_hours": [
+    "We're currently experiencing high call volume. I'm here to help you quickly. What do you need assistance with?",
+    "Thanks for your patience during our busy period. How can I help you today?",
+    "I appreciate you waiting. I'm here to assist you efficiently. What can I help you with?",
+    "Thank you for your patience. I'm ready to help you now. What do you need?",
+    "I'm here to help you quickly. What can I assist you with today?"
+  ],
+  "maintenance": [
+    "We're currently performing scheduled maintenance. Some features may be temporarily unavailable. Is there anything specific I can help you with?",
+    "We're doing some system updates right now. I'm still here to help with any questions you have.",
+    "We're performing maintenance at the moment. I can still assist you with general questions and support tickets.",
+    "We're updating our systems. While some features may be temporarily unavailable, I'm here to help with your questions.",
+    "We're doing scheduled maintenance. I can still help you with support and information while the updates are in progress."
+  ],
+  "holiday": [
+    "Happy holidays! I'm here to help you during this time. What can I assist you with?",
+    "Happy holidays! I'm available to help you today. What do you need assistance with?",
+    "Happy holidays! I'm here to support you. What can I help you with?",
+    "Happy holidays! I'm available to assist you. What would you like to know?",
+    "Happy holidays! I'm here to help you today. What can I assist you with?"
+  ],
+  "weekend": [
+    "Happy weekend! I'm here to help you. What can I assist you with?",
+    "Good weekend! I'm available to help you today. What do you need?",
+    "Happy weekend! I'm here to support you. What can I help with?",
+    "Good weekend! I'm available to assist you. What would you like to know?",
+    "Happy weekend! I'm here to help you today. What can I assist you with?"
+  ]
+} 

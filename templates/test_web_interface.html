@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot API Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-result { margin: 10px 0; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .info { background-color: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        #results { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🤖 Chatbot API Test</h1>
+    <p>This page tests the chatbot API endpoints to ensure they're working correctly.</p>
+    
+    <button onclick="testHealth()">Test Health Check</button>
+    <button onclick="testChat()">Test Chat API</button>
+    <button onclick="testAll()">Test All Endpoints</button>
+    
+    <div id="results"></div>
+
+    <script>
+        function addResult(message, type = 'info') {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `test-result ${type}`;
+            div.innerHTML = message;
+            results.appendChild(div);
+        }
+
+        async function testHealth() {
+            try {
+                addResult('🔍 Testing health check...', 'info');
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                
+                if (response.ok) {
+                    addResult(`✅ Health check passed! Status: ${data.status}`, 'success');
+                } else {
+                    addResult(`❌ Health check failed: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                addResult(`❌ Health check error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testChat() {
+            try {
+                addResult('🔍 Testing chat API...', 'info');
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: 'hello',
+                        user_id: 'test_user',
+                        session_id: 'test_session'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok && data.success) {
+                    addResult(`✅ Chat API working! Response: "${data.response}"`, 'success');
+                    addResult(`📊 Intent: ${data.intent}, Confidence: ${data.confidence}`, 'info');
+                } else {
+                    addResult(`❌ Chat API failed: ${data.error || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                addResult(`❌ Chat API error: ${error.message}`, 'error');
+            }
+        }
+
+        async function testAll() {
+            addResult('🚀 Starting comprehensive API test...', 'info');
+            await testHealth();
+            await testChat();
+            addResult('🎉 All tests completed!', 'success');
+        }
+
+        // Auto-test on page load
+        window.onload = function() {
+            addResult('🌐 Page loaded. Ready to test API endpoints.', 'info');
+        };
+    </script>
+</body>
+</html> 

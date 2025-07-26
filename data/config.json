@@ -1,0 +1,31 @@
+{
+  "name": "Customer Support Bot",
+  "version": "1.0.0",
+  "language": "en",
+  "max_context_length": 10,
+  "response_timeout": 5.0,
+  "enable_sentiment": true,
+  "enable_learning": true,
+  "database": {
+    "path": "chatbot.db",
+    "backup_enabled": true,
+    "backup_interval": 24
+  },
+  "nlp": {
+    "confidence_threshold": 0.3,
+    "max_response_length": 500,
+    "enable_entity_extraction": true,
+    "enable_sentiment_analysis": true
+  },
+  "responses": {
+    "max_suggestions": 4,
+    "enable_context_awareness": true,
+    "enable_personality": true
+  },
+  "escalation": {
+    "enabled": true,
+    "confidence_threshold": 0.5,
+    "sentiment_threshold": -0.5,
+    "max_attempts": 3
+  }
+}

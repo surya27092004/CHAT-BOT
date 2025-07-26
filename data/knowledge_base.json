@@ -1,0 +1,139 @@
+{
+  "faqs": [
+    {
+      "question": "How do I reset my password?",
+      "answer": "To reset your password, go to the login page and click 'Forgot Password'. Enter your email address and follow the instructions sent to your email. The reset link will be valid for 24 hours.",
+      "keywords": ["password", "reset", "forgot", "login", "email"],
+      "category": "account"
+    },
+    {
+      "question": "What are your business hours?",
+      "answer": "Our customer support is available Monday through Friday, 9 AM to 6 PM EST. For urgent issues, you can create a support ticket anytime and we'll respond as soon as possible. Emergency support is available 24/7 for critical issues.",
+      "keywords": ["hours", "business", "support", "time", "available", "emergency"],
+      "category": "support"
+    },
+    {
+      "question": "How do I contact customer support?",
+      "answer": "You can contact our customer support team through multiple channels:\n• This chat interface\n• Email: support@company.com\n• Phone: 1-800-SUPPORT\n• Support tickets for detailed issues\n\nWe typically respond within 2-4 hours during business hours.",
+      "keywords": ["contact", "support", "help", "phone", "email", "ticket"],
+      "category": "support"
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major payment methods:\n• Credit cards: Visa, MasterCard, American Express, Discover\n• Digital wallets: PayPal, Apple Pay, Google Pay\n• Bank transfers (for enterprise customers)\n• ACH payments (US customers only)\n\nAll payments are processed securely through our PCI-compliant payment processor.",
+      "keywords": ["payment", "credit card", "paypal", "money", "billing", "ach", "bank transfer"],
+      "category": "billing"
+    },
+    {
+      "question": "How do I cancel my subscription?",
+      "answer": "To cancel your subscription:\n1. Log into your account\n2. Go to 'Account Settings' > 'Subscription Management'\n3. Click 'Cancel Subscription'\n4. Choose your cancellation reason\n5. Confirm cancellation\n\nYou'll have access until the end of your current billing period. No refunds are provided for partial months.",
+      "keywords": ["cancel", "subscription", "billing", "account", "refund"],
+      "category": "billing"
+    },
+    {
+      "question": "Can I upgrade or downgrade my plan?",
+      "answer": "Yes, you can change your plan at any time:\n• Upgrades take effect immediately\n• Downgrades take effect at the next billing cycle\n• Pro-rated charges apply for upgrades\n• No charges for downgrades until next billing cycle\n\nGo to 'Account Settings' > 'Subscription Management' to make changes.",
+      "keywords": ["upgrade", "downgrade", "plan", "subscription", "billing", "change"],
+      "category": "billing"
+    },
+    {
+      "question": "Is my data secure?",
+      "answer": "Yes, we take data security very seriously:\n• All data is encrypted in transit and at rest\n• We use industry-standard SSL/TLS encryption\n• Regular security audits and penetration testing\n• GDPR and SOC 2 Type II compliant\n• Data backups stored in multiple secure locations\n\nYour privacy and security are our top priorities.",
+      "keywords": ["security", "data", "encryption", "privacy", "gdpr", "backup"],
+      "category": "security"
+    },
+    {
+      "question": "Do you offer a free trial?",
+      "answer": "Yes, we offer a 14-day free trial for all plans:\n• No credit card required to start\n• Full access to all features\n• Easy cancellation anytime\n• Upgrade to paid plan to continue after trial\n\nStart your free trial today and see how our platform can help your business!",
+      "keywords": ["free trial", "trial", "credit card", "upgrade", "features"],
+      "category": "pricing"
+    },
+    {
+      "question": "What happens if I exceed my plan limits?",
+      "answer": "If you exceed your plan limits:\n• You'll receive email notifications\n• Service continues uninterrupted\n• Automatic upgrade option available\n• Pro-rated charges for the remainder of billing cycle\n\nWe recommend monitoring your usage in the dashboard to avoid unexpected charges.",
+      "keywords": ["limits", "exceed", "upgrade", "billing", "usage", "charges"],
+      "category": "billing"
+    },
+    {
+      "question": "How do I export my data?",
+      "answer": "You can export your data in several formats:\n• CSV format for spreadsheets\n• JSON format for developers\n• PDF reports for documentation\n• API access for automated exports\n\nGo to 'Account Settings' > 'Data Export' to download your information. Large exports may take a few minutes to process.",
+      "keywords": ["export", "data", "csv", "json", "pdf", "download"],
+      "category": "account"
+    }
+  ],
+  "products": [
+    {
+      "name": "Basic Plan",
+      "description": "Perfect for individuals and small teams getting started",
+      "price": "$9.99/month",
+      "features": [
+        "Up to 5 team members",
+        "Basic analytics",
+        "Email support",
+        "5GB storage",
+        "Standard integrations",
+        "Mobile app access"
+      ],
+      "category": "subscription",
+      "popular": false
+    },
+    {
+      "name": "Pro Plan",
+      "description": "Advanced features for growing businesses and teams",
+      "price": "$29.99/month",
+      "features": [
+        "Up to 25 team members",
+        "Advanced analytics & reporting",
+        "Priority support",
+        "50GB storage",
+        "Advanced integrations",
+        "API access",
+        "Custom branding",
+        "Advanced security features"
+      ],
+      "category": "subscription",
+      "popular": true
+    },
+    {
+      "name": "Enterprise Plan",
+      "description": "Custom solutions for large organizations with specific needs",
+      "price": "Contact sales",
+      "features": [
+        "Unlimited team members",
+        "Custom analytics & reporting",
+        "Dedicated support manager",
+        "Unlimited storage",
+        "Custom integrations",
+        "Advanced API access",
+        "White-label options",
+        "SLA guarantees",
+        "On-premise deployment options",
+        "Custom training & onboarding"
+      ],
+      "category": "subscription",
+      "popular": false
+    }
+  ],
+  "categories": {
+    "account": "Account management and settings",
+    "support": "Technical support and troubleshooting",
+    "billing": "Payment, pricing, and subscription questions",
+    "product": "Product features and capabilities",
+    "security": "Data security and privacy",
+    "pricing": "Pricing plans and trials",
+    "general": "General inquiries and information"
+  },
+  "company_info": {
+    "name": "TechCorp Solutions",
+    "founded": "2018",
+    "headquarters": "San Francisco, CA",
+    "employees": "500+",
+    "customers": "10,000+",
+    "mission": "Empowering businesses with innovative technology solutions",
+    "contact": {
+      "email": "support@techcorp.com",
+      "phone": "1-800-TECHCORP",
+      "address": "123 Innovation Drive, San Francisco, CA 94105"
+    }
+  }
+} 
