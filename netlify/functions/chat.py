@@ -1,82 +1,75 @@
 import json
-import sys
 import os
 import uuid
 from datetime import datetime
 
-# Add the project root to Python path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
-
-try:
-    from chatbot import Chatbot
-except ImportError:
-    # Fallback chatbot implementation
-    class Chatbot:
-        def __init__(self):
-            self.responses = {
-                "greeting": [
-                    "Hello! How can I help you today?",
-                    "Hi there! What can I assist you with?",
-                    "Welcome! How may I help you?"
-                ],
-                "products": [
-                    "We offer a wide range of products including software solutions, consulting services, and technical support. What specific product are you interested in?"
-                ],
-                "account": [
-                    "I can help you with account-related issues. Please describe what specific problem you're experiencing with your account."
-                ],
-                "hours": [
-                    "Our business hours are Monday to Friday, 9 AM to 6 PM EST. For urgent issues, you can create a support ticket anytime."
-                ],
-                "ticket": [
-                    "I can help you create a support ticket. Please provide details about your issue and I'll escalate it to our support team."
-                ],
-                "default": [
-                    "I understand you need help. Could you please provide more details about your question?",
-                    "I'm here to assist you. Can you tell me more about what you need help with?",
-                    "Thank you for your message. Could you please elaborate on your request?"
-                ]
-            }
+# Fallback chatbot implementation since we can't import the full chatbot module in Netlify Functions
+class Chatbot:
+    def __init__(self):
+        self.responses = {
+            "greeting": [
+                "Hello! How can I help you today?",
+                "Hi there! What can I assist you with?",
+                "Welcome! How may I help you?"
+            ],
+            "products": [
+                "We offer a wide range of products including software solutions, consulting services, and technical support. What specific product are you interested in?"
+            ],
+            "account": [
+                "I can help you with account-related issues. Please describe what specific problem you're experiencing with your account."
+            ],
+            "hours": [
+                "Our business hours are Monday to Friday, 9 AM to 6 PM EST. For urgent issues, you can create a support ticket anytime."
+            ],
+            "ticket": [
+                "I can help you create a support ticket. Please provide details about your issue and I'll escalate it to our support team."
+            ],
+            "default": [
+                "I understand you need help. Could you please provide more details about your question?",
+                "I'm here to assist you. Can you tell me more about what you need help with?",
+                "Thank you for your message. Could you please elaborate on your request?"
+            ]
+        }
+    
+    def process_message(self, user_id, message, session_id=None):
+        message_lower = message.lower()
         
-        def process_message(self, user_id, message, session_id=None):
-            message_lower = message.lower()
-            
-            # Simple intent detection
-            if any(word in message_lower for word in ['hello', 'hi', 'hey', 'start']):
-                intent = 'greeting'
-            elif any(word in message_lower for word in ['product', 'service', 'offer']):
-                intent = 'products'
-            elif any(word in message_lower for word in ['account', 'login', 'password']):
-                intent = 'account'
-            elif any(word in message_lower for word in ['hours', 'time', 'open']):
-                intent = 'hours'
-            elif any(word in message_lower for word in ['ticket', 'support', 'help']):
-                intent = 'ticket'
-            else:
-                intent = 'default'
-            
-            response = self.responses[intent][0]  # Use first response for simplicity
-            
-            return {
-                'response': response,
-                'confidence': 0.8,
-                'intent': intent,
-                'session_id': session_id or str(uuid.uuid4()),
-                'processing_time': 0.1,
-                'timestamp': datetime.now().isoformat(),
-                'suggestions': self._get_suggestions(intent),
-                'requires_human': False,
-                'entities': {}
-            }
+        # Simple intent detection
+        if any(word in message_lower for word in ['hello', 'hi', 'hey', 'start']):
+            intent = 'greeting'
+        elif any(word in message_lower for word in ['product', 'service', 'offer']):
+            intent = 'products'
+        elif any(word in message_lower for word in ['account', 'login', 'password']):
+            intent = 'account'
+        elif any(word in message_lower for word in ['hours', 'time', 'open']):
+            intent = 'hours'
+        elif any(word in message_lower for word in ['ticket', 'support', 'help']):
+            intent = 'ticket'
+        else:
+            intent = 'default'
         
-        def _get_suggestions(self, intent):
-            suggestions = {
-                'greeting': ['Tell me about your products', 'I need help with my account', 'What are your business hours?'],
-                'products': ['Show me pricing', 'Technical specifications', 'Contact sales'],
-                'account': ['Reset password', 'Update profile', 'Billing questions'],
-                'default': ['Create support ticket', 'Talk to human agent', 'FAQ']
-            }
-            return suggestions.get(intent, [])
+        response = self.responses[intent][0]  # Use first response for simplicity
+        
+        return {
+            'response': response,
+            'confidence': 0.8,
+            'intent': intent,
+            'session_id': session_id or str(uuid.uuid4()),
+            'processing_time': 0.1,
+            'timestamp': datetime.now().isoformat(),
+            'suggestions': self._get_suggestions(intent),
+            'requires_human': False,
+            'entities': {}
+        }
+    
+    def _get_suggestions(self, intent):
+        suggestions = {
+            'greeting': ['Tell me about your products', 'I need help with my account', 'What are your business hours?'],
+            'products': ['Show me pricing', 'Technical specifications', 'Contact sales'],
+            'account': ['Reset password', 'Update profile', 'Billing questions'],
+            'default': ['Create support ticket', 'Talk to human agent', 'FAQ']
+        }
+        return suggestions.get(intent, [])
 
 def handler(event, context):
     """
