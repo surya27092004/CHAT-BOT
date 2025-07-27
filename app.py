@@ -366,13 +366,14 @@ if __name__ == '__main__':
     os.makedirs('templates', exist_ok=True)
     
     print("🚀 Starting Customer Support Chatbot...")
-    print("📱 Web interface available at: http://localhost:5000")
-    print("🔧 API documentation available at: http://localhost:5000/api/health")
+    
+    # Get port from environment variable (for Render deployment)
+    port = int(os.environ.get('PORT', 5000))
     
     # Run the application
     app.run(
         host='0.0.0.0',
-        port=5000,
-        debug=True,
+        port=port,
+        debug=False,
         threaded=True
-    ) 
+    )
